@@ -18,7 +18,7 @@ So The BlockingThread is just for new programmers like you at this point.And,her
 
 You just need to start a new BlockingThread in the same way,and use the get() method to wait it end.What is more,you can set a time to wait,and if the BlockingThread doesn't end in limited time,it will throw an exception which you can catch and use the cancel() method to cancel it in the catch block.
 
-Here is a example:
+Here is an example:
 ```
 public static void main(String args[]){
 		Thread thread=new Thread(){
