@@ -16,7 +16,7 @@ There is a problem when the task costs a long time and you wish it to end it,if 
 
 So The BlockingThread is just for new programmers like you at this point.And,here comes the quesion,What can the BlockingThread do for you?
 
-You just need to start a new BlockingThread in the same way,and use the get() method to wait it end.What is more,you can set a time to wait,and if the BlockingThread doesn't end in limited time,it will throw and exception which you can catch and use the cancel() method to cancel it in the catch block.
+You just need to start a new BlockingThread in the same way,and use the get() method to wait it end.What is more,you can set a time to wait,and if the BlockingThread doesn't end in limited time,it will throw an exception which you can catch and use the cancel() method to cancel it in the catch block.
 
 Here is a example:
 ```
