@@ -12,9 +12,7 @@ Thread a=new Thread(){
   }
 };
 ```
-
-
-    There is a problem when the task costs a long time and you wish it to end it,if you can not get the thread's working result with limited time,such as 5 seconds.But you are not going to use the java concurrency API,which is quite unfamiliar for a beginner.
+There is a problem when the task costs a long time and you wish it to end it,if you can not get the thread's working result with limited time,such as 5 seconds.But you are not going to use the java concurrency API,which is quite unfamiliar for a beginner.
 So The BlockingThread is just for new programmers like you at this point.And,here comes the quesion,What can the BlockingThread do for you?
 You just need to start a new BlockingThread in the same way,and use the get() method to wait it end.What is more,you can set a time to wait,and if the BlockingThread doesn't end in limited time,it will throw and exception which you can catch and use the cancel() method to cancel it in the catch block.
 
